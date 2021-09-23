@@ -1,0 +1,43 @@
+{
+  "name": "api-qpt",
+  "version": "1.0.0",
+  "description": "API QPT",
+  "main": "index.js",
+  "scripts": {
+    "dev": "env-cmd -f src/config/environments/.env.dev nodemon --exec babel-node index.js",
+    "start": "env-cmd -f src/config/environments/.env.production node index.js",
+    "test": "jest"
+  },
+  "author": "Jack Sari",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/runtime": "^7.15.4",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "env-cmd": "^10.1.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "http": "0.0.1-security",
+    "jest": "^27.0.6",
+    "mongoose": "^6.0.7",
+    "nodemailer": "^6.6.3",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "slug": "^5.1.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "nodemon": "^2.0.12"
+  }
+}
